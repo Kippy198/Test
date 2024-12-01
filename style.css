@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.top-nav{
+    background-color: #192a46;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-bottom: 1px solid rgb(136, 135, 135);
+}
+.top-nav ul{
+    list-style: none;
+    margin-left: 4vh;
+    padding: 0;
+}
+.top-nav li{
+    display: inline;
+    margin: 0 5px;
+}
+.top-nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+}
+.top-nav a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1.5px;
+    background-color: aliceblue;
+    bottom: -2px;
+    left: 0;
+   transition: width 0.4s ease-out;
+}
+.top-nav a:hover::after{
+    width: 60%;
+}
+.social-icon a{
+    color: white;
+    margin: 0 18px;
+    font-size: 18px;
+}
+
+.main-nav{
+    background-color: #192a46;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    padding-left: 5vh;
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: bold;
+}
+.main-nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.main-nav li{
+    margin: 0 20px;
+    color: aliceblue;
+    position: relative;
+    cursor: pointer;
+}
+.main-nav li::after{
+    content: '';
+    position: absolute;
+    bottom: -0.5px;
+    left: 0;
+    transition: width 0.4s ease-out;
+    width: 0;
+    height: 1.5px;
+    background-color: aliceblue;
+}
+.main-nav li:hover::after{
+    width: 60%;
+}
+.main-nav ul a{
+    font-size: 14px;
+    text-decoration: none;
+}
+.main-nav a{
+    margin: 0 20px;
+    color: aliceblue;
+    font-size: 24px;
+}
+.search-bar{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-right: 50px;
+    margin-left: 17vh;
+}
+.search-bar input[type ="text"]{
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 80vh;
+    height: 30px;
+}
+.search-bar select{
+    height: 46px;
+    padding: 7.5px;
+    border: none;
+    background-color: aliceblue;
+    border-radius: 0 5px 5px 0;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropbtn{
+    background-color: #ffc107;
+    color: white;
+    padding: 10px 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 10px;
+    margin-left: 5vh;
+}
+.dropbtn i{
+    margin-right: 30px;
+    margin-left: 10px;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 210px;
+    z-index: 1;
+}
+.dropdown-content a{
+    color: black;
+    padding: 6px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+}
+.dropdown-content a:hover{
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.main-container {
+    width: 100%;
+    padding-top: 30px;
+    margin-left: 5vh;
+    display: flex;
+}
+.side-bar{
+   font-size: 14px;
+   width: 250px;
+   padding: 1rem;
+   margin-left: 20px;
+   border: 1px solid bisque;
+   border-radius: 5px;
+}
+.side-bar ul li a{
+    color: black;
+    display: block;
+    padding-top: 0.5rem 0;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+.side-bar ul li a:hover{
+    color: aqua;
+}
+.content{
+    background-repeat: no-repeat;
+    width: 75%;
+    display: flex;
+    padding: 1rem;
+    flex-direction: row;
+}
+.offer-main-1{
+   position: relative;
+   height: auto;
+   color: #fff;
+   margin-bottom: 1rem; 
+   flex: 1;
+}
+.offer-main-1 input{
+    color: black;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.chunoi-1{
+    top: -50%;
+    left: 10%;
+    max-width: 250px;
+    position: absolute;
+    text-align: left;
+    z-index: 2;
+}
+.offer-main-1 img{
+    width: 600px;
+    height: auto;
+    position: absolute;
+}
+.left-content{
+    border-left: 200px;
+    flex: 2;
+    gap: 0;
+}
+.right-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+.right-content img{
+    width: 100%;
+    gap: 0;
+    height: auto;
+}
+.offer-main-2, .offer-main-3 {
+    position: relative;
+}
+.chunoi-2, .chunoi-3{
+    top: 20%;
+    left: 10%;
+    max-width: 250px;
+    position: absolute;
+    text-align: left;
+    z-index: 2;
+    color: #f1f1f1;
+}
+.offer-main-2,.offer-main-3 input{
+    color: black;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
